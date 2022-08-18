@@ -1,0 +1,356 @@
+@import url(https://fonts.google.com/specimen/Public+Sans);
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hwb(228 24% 36%);
+}
+
+:root {
+    --Dark-Blue: hsl(233, 26%, 24%);
+    --Lime-Green: hsl(136, 65%, 51%);
+    --Bright-Cyan: hsl(192, 70%, 51%);
+    --Grayish-Blue: hsl(233, 8%, 62%);
+    --Light-Grayish-Blue: hsl(220, 16%, 96%);
+    --Very-Light-Gray: hsl(0, 0%, 98%);
+    --White: hsl(0, 0%, 100%);
+    --Weights: 300, 400, 700;
+    --Family: [Public Sans](https: //fonts.google.com/specimen/Public+Sans)
+    }
+
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 10;
+        display: flex;
+        width: 100%;
+        height: 20px;
+        background-color: white;
+        justify-content: center;
+        align-items: center;
+        column-gap: 100px;
+        padding: 30px 0;
+    }
+
+    header nav {
+        display: flex;
+        column-gap: 50px;
+    }
+    header a{
+        text-decoration: none;
+        color: var(--Grayish-Blue);
+    }
+
+    header .div2 .Request {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 50px;
+        color: var(--White);
+        background-image: linear-gradient(90deg, var(--Lime-Green), var(--Bright-Cyan));
+        border-radius: 50px;
+        width: 150px;
+        height: 40px;
+        cursor: pointer;
+
+    }
+   
+
+    main {
+        width: 100%;
+        font-family: var(--Family);
+    }
+
+    main .section1 {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 100vh;
+        margin-top: 50px;
+        overflow: hidden;
+        background-color: var(--Very-Light-Gray);
+    }
+    main .section1 .div2 .mobile{
+        display: none;
+    }
+
+    main .section1 .div1 {
+        width: 50%;
+        padding: 100px 100px;
+    }
+
+    main .section1 .div1 .next-g {
+        font-size: 40px;
+    }
+
+    main .section1 .div1 .Take {
+        line-height: 25px;
+        font-size: 18px;
+        font-weight: var(--Weights);
+        color: var(--Dark-Blue)
+    }
+
+    main .section1 .div1 .Request {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--White);
+        background-image: linear-gradient(90deg, var(--Lime-Green), var(--Bright-Cyan));
+        border-radius: 50px;
+        width: 30%;
+        height: 40px;
+        font-size: 20px;
+        margin: 0 20px;
+        font-weight: 300;
+        cursor: pointer;
+    }
+
+    main .section1 .div2 {
+        width: 50%;
+        position: relative;
+    }
+
+    .desktopsvg {
+        transform: skewY(5deg);
+        position: absolute;
+        left: -300px;
+        bottom: -100px;
+    }
+
+    .phone {
+        position: absolute;
+        bottom: -100px;
+        right: -100px;
+    }
+
+    main .section2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: 30px;
+        width: 100%;
+        height: 70vh;
+        background-color: var(--Light-Grayish-Blue);
+        padding-top: 100px;
+    }
+    
+    main .section2 .div1, .div2, .div3, .div4 {
+        width: 20%;
+        text-align:justify;
+        line-height: 20px;
+    }
+
+    main .choose {
+        position: absolute;
+        top: 850px;
+        left: 100px;
+    }
+
+    main .choose .easy {
+        font-size: 40px;
+    }
+
+    main .choose .we {
+        line-height: 30px;
+        color: var(--Grayish-Blue);
+    }
+
+    main .section2 div .heading {
+        font-size: 30px;
+    }
+    main .latest{
+        position: absolute;
+        font-size: 50px;
+        top: 1420px;
+        left: 100px;
+        font-family: var(--Family);
+        font-weight: var(--Weights);
+    }
+
+    main .section3 {
+        width: 100%;
+        height: 100vh;
+        background-color: var(--Very-Light-Gray);
+    }
+    main .section3 .section3-img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: 30px;
+        padding-top: 150px;
+        position: relative;
+        left: -0.8px;
+    }
+    main .section3 .section3-body{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        column-gap: 30px;
+    }
+    main .section3 .section3-body div{
+        width: 17%;
+        height: 30vh;
+        background-color: var(--White);
+        padding: 20px 20px;
+    }
+    main .section3-body div .header{
+        font-size: 20px;
+    }
+    main .section3-body div .header:hover{
+        color: var(--Lime-Green);
+        cursor: pointer;
+    }
+
+    main .section3-body div .body{
+        color: var(--Grayish-Blue);
+
+    }
+    
+     main .section3 div .author{
+         color: var(--Grayish-Blue);
+     }
+
+    main .section3 div img {
+        border-radius: 5px 5px 0 0;
+    }
+    main .section4{
+        width: 100%;
+        height: 30vh;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        column-gap: 50px;
+        background-color: var(--Dark-Blue);
+    }
+    main .section4 .div1{
+        width: 60%;
+        display: flex;
+        column-gap: 150px;
+    }
+    main .section4 div .logo{
+        color: var(--White);
+    }
+    main .section4 .div1 .icon{
+        display: flex;
+        column-gap: 10px;
+    }
+    main .section4 .div1 .about, .career{
+        color: var(--White);
+        font-family: var(--Family);
+        font-weight: var(--Weights);
+    }
+    main .section4 .div1 .icon img:hover{
+        color: var(--Lime-Green);
+        cursor: pointer;
+    }
+    main .section4 .footer:hover{
+        filter: grayscale(100%) sepia(100%);
+        cursor: pointer;
+    }
+    main .section4 .request{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: var(--White);
+        background-image: linear-gradient(90deg, var(--Lime-Green), var(--Bright-Cyan));
+        border-radius: 50px;
+        width: 150px;
+        height: 40px;
+        cursor: pointer;
+    }
+    main .section4 .right{
+        color: var(--Grayish-Blue);
+        position: absolute;
+        left: 1080px;
+    }
+    header .menu1:hover{
+        color: black;
+    }
+    header .menu1::after{
+        content: "";
+        width: 0;
+        height: 2px;
+        background-color: var(--Lime-Green);
+        transition: 1s ease-in-out;
+        display: block;
+
+    }
+    header .menu1:hover::after{
+        content: "";
+        width: 30px;
+        height: 3px;
+        background-color: var(--Lime-Green);
+        display: block;
+    }
+    .hamburger{
+        display: none;
+    }
+    @media screen and (max-width: 600px){
+        header nav, header .div2, .desktopsvg{
+            display: none;
+        }
+        header .div1{
+            position: relative;
+            left: -400px;
+        }
+        .hamburger{
+            display: flex;
+            position: relative;
+            left: -350px;
+        }
+      
+        .section1{
+            flex-direction: column-reverse;
+            justify-content: center;
+        }
+        .section1 .div2 .desktopsvg{
+            width: 350px;
+            height: 350px;
+        }
+         main .section1 .div1{
+            width: 100%;
+            padding: 0 20px;
+            /* margin-top: -30px; */
+        }
+        main .section1 .div1 .Request{
+            width: 50%;
+            margin: 0 50px;
+        }
+        main .section1 .div2{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+        main .section1 .div2 .phone{
+            width: 360px;
+            height: 360px;
+            right: 4px;
+            top: -100px;
+        }
+        main .section2{
+            flex-direction: column;
+            padding-top: 50px;
+        }
+          
+    main .section2 .div1, .div2, .div3, .div4 {
+        width: 100%;
+        text-align:center;
+        line-height: 20px;
+        column-gap: 30px;
+        padding-top: 50px;
+    }
+}
+        
+    
+        
+   
