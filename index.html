@@ -9,7 +9,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="style.css">
 
-  <title>Niit project</title>
+  <title>NIIT PROJECT BY ADIGWE EMMANUEL</title>
 </head>
 
 <body>
@@ -24,13 +24,23 @@
      <a href="#3"><p class="menu1">Blog</p></a> 
      <a href=""><p class="menu1"> Careers</p></a> 
     </nav>
-    <img src="./images/icon-hamburger.svg" alt="" class="hamburger">
+    <img src="./images/icon-hamburger.svg" alt="" class="hamburger" id="hamburger">
+    <div class="mobile-menu" id="mobile-menu">
+      <img src="./images/icon-close.svg" alt="" id="close">
+      <a href="#"><p class="menu2" id="menu1">Home</p></a>  
+      <a href="#2"><p class="menu2" id="menu2">About</p></a> 
+      <a href="#4"><p class="menu2" id="menu3">Contact</p></a> 
+      <a href="#3"><p class="menu2" id="menu4">Blog</p></a> 
+      <a href=""><p class="menu2" id="menu5"> Careers</p></a> 
+      <a href=""> <p class="Request" id="menu6">Request Invite</p></a>
+    </div>
+    <div class="overlay" id="overlay"></div>
+
     <div class="div2">
-      <p class="Request">
-        Request Invite</p>
+     <a href=""> <p class="Request">Request Invite</p></a>
     </div>
   </header>
-  <main>
+   <main>
     <section class="section1">
       <div class="div1">
         <p class="next-g"> Next generation <br> digital banking</p> <br>
@@ -40,9 +50,7 @@
         <p class="Request">
           Request Invite</p>
       </div>
-      <div class="div2">
-        <img src="./images/bg-intro-mobile.svg" alt="" class="mobilesvg">
-        <img src="./images/bg-intro-desktop.svg" alt="" class="desktopsvg">
+        <div class="div2">
         <img src="./images/image-mockups.png" alt="" class="phone">
       </div>
     </section>
@@ -63,7 +71,7 @@
           wherever you are in the world.
         </p>
       </div>
-      <div class="div2">
+     <div class="div2">
         <img src="./images/icon-budgeting.svg" alt="">
         <br> <br>
         <p class="heading">Simple Budgeting</p>
@@ -89,45 +97,58 @@
           Manage your savings, investments, <br> pension, and much more from <br> one account. Tracking
           your money has never been easier.</p>
       </div>
-    </section>
+     </section>
     <div class="latest">
       <p>Latest Articles</p>
     </div>
-    <section class="section3" id="3">
-      <div class="section3-img">
-        <img src="./images/image-currency.jpg" alt="" width="20%" height="200px">
-        <img src="./images/image-restaurant.jpg" alt="" width="20%" height="200px">
-        <img src="./images/image-plane.jpg" alt="" width="20%" height="200px">
-        <img src="./images/image-confetti.jpg" alt="" width="20%" height="200px">
-      </div>
-      <div class="section3-body">
-        <div>
-          <p class="author">By Claire Robinson</p> <br>
-          <p class="header">Receive money in any currency with no fees</p> <br>
-          <p class="body">The world is getting smaller and we’re becoming more mobile. So why should you be
-            forced to only receive money in a single …</p>
-        </div>
-        <div>
-          <p class="author">By Wilson Hutton</p> <br>
-          <p class="header">Treat yourself without worrying about money</p> <br>
-          <p class="body"> Our simple budgeting feature allows you to separate out your spending and set
-            realistic limits each month. That means you …</p>
-        </div>
-        <div>
-          <p class="author"> By Wilson Hutton</p> <br>
-          <p class="header">Take your Easybank card wherever you go</p> <br>
-          <p class="body">We want you to enjoy your travels. This is why we don’t charge any fees on purchases
-            while you’re abroad. We’ll even show you …</p>
-        </div>
-        <div>
-          <p class="author">
-            By Claire Robinson</p> <br>
-          <p class="header">Our invite-only Beta accounts are now live!</p> <br>
-          <p class="body">After a lot of hard work by the whole team, we’re excited to launch our closed beta.
-            It’s easy to request an invite through the site ...</p>
+     <section class="section3" id="3">
+        <div class="div1">
+          <div>
+          <img src="./images/image-currency.jpg" alt="" width="100%" height="200px">
+          <div class="note">
+            <p class="author">By Claire Robinson</p> <br>
+            <p class="header">Receive money in any currency with no fees</p> <br>
+            <p class="body">The world is getting smaller and we’re becoming more mobile. <br> So why should you be
+              forced to only receive money in a single …</p>
         </div>
       </div>
-    </section>
+    </div>
+      <div class="div2">
+          <div>
+            <img src="./images/image-restaurant.jpg" alt="" width="100%" height="200px">
+            <div class="note">
+              <p class="author">By Wilson Hutton</p> <br>
+              <p class="header">Treat yourself without worrying about money</p> <br>
+              <p class="body"> Our simple budgeting feature allows you to separate out your spending and set
+                realistic limits each month. That means you …</p>
+            </div>
+          </div>
+        </div>
+        <div class="div3">
+          <div>
+            <img src="./images/image-plane.jpg" alt="" width="100%" height="200px">
+            <div class="note">
+              <p class="author"> By Wilson Hutton</p> <br>
+              <p class="header">Take your Easybank card wherever you go</p> <br>
+              <p class="body">We want you to enjoy your travels. This is why we don’t charge any fees on purchases
+                while you’re abroad. We’ll even show you …</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="div4"> 
+          <div>
+            <img src="./images/image-confetti.jpg" alt="" width="100%" height="200px">
+            <div class="note">
+              <p class="author">
+                By Claire Robinson</p> <br>
+              <p class="header">Our invite-only Beta accounts are now live!</p> <br>
+              <p class="body">After a lot of hard work by the whole team, we’re excited to launch our closed beta.
+                It’s easy to request an invite through the site ...</p>
+            </div>
+          </div>
+        </div>
+      </section>
     <section class="section4" id="4">
       <div class="div1">
         <div>
@@ -140,7 +161,8 @@
             <img src="./images/icon-instagram.svg" alt="">
           </div>
         </div>
-        <div class="about">
+        </div>
+         <div class="about">
           <p class="footer">About Us</p><br>
           <p class="footer">Contact</p><br>
           <p class="footer">Blog</p>
@@ -152,51 +174,96 @@
         </div>
       </div>
       <div>
-        <div>
           <p class="request">Request Invite</p> <br><br>
           <p class="right">© Easybank. All Rights Reserved </p>
-        </div>
-      </div>
+      </div> 
     </section>
   </main>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <!-- <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Your Name Here</a>.
-  </div> -->
+  <script>
+let hamburger = document.getElementById('hamburger')
+let close = document.getElementById('close')
+let mobilemenu = document.getElementById('mobile-menu')
+let overlay = document.getElementById('overlay')
+let menu1 = document.getElementById('menu1')
+let menu2 = document.getElementById('menu2')
+let menu3 = document.getElementById('menu3')
+let menu4 = document.getElementById('menu4')
+let menu5 = document.getElementById('menu5')
+overlay.style.display = 'none'
+mobilemenu.style.display = 'none'
+hamburger.addEventListener("click", function () {
+  if (overlay.style.display = "none", mobilemenu.style.display = "none" ){
+    overlay.style.display = 'flex';
+    mobilemenu.style.display = 'flex'
+      } else {
+        overlay.style.display = 'none';
+        mobilemenu.style.display = "none"
+      }
+})
+close.addEventListener("click", function () {
+if (overlay.style.display = "flex", mobilemenu.style.display = "flex" ){
+    overlay.style.display = 'none';
+    mobilemenu.style.display = 'none'
+      } else {
+        overlay.style.display = 'flex';
+        mobilemenu.style.display = "flex"
+      }
+    })
+menu1.addEventListener("click", function () {
+if (overlay.style.display = "flex", mobilemenu.style.display = "flex" ){
+    overlay.style.display = 'none';
+    mobilemenu.style.display = 'none'
+      } else {
+        overlay.style.display = 'flex';
+        mobilemenu.style.display = "flex"
+      }
+    })
+menu2.addEventListener("click", function () {
+if (overlay.style.display = "flex", mobilemenu.style.display = "flex" ){
+    overlay.style.display = 'none';
+    mobilemenu.style.display = 'none'
+      } else {
+        overlay.style.display = 'flex';
+        mobilemenu.style.display = "flex"
+      }
+    })
+menu3.addEventListener("click", function () {
+if (overlay.style.display = "flex", mobilemenu.style.display = "flex" ){
+    overlay.style.display = 'none';
+    mobilemenu.style.display = 'none'
+      } else {
+        overlay.style.display = 'flex';
+        mobilemenu.style.display = "flex"
+      }
+    })
+menu4.addEventListener("click", function () {
+if (overlay.style.display = "flex", mobilemenu.style.display = "flex" ){
+    overlay.style.display = 'none';
+    mobilemenu.style.display = 'none'
+      } else {
+        overlay.style.display = 'flex';
+        mobilemenu.style.display = "flex"
+      }
+    })
+menu5.addEventListener("click", function () {
+if (overlay.style.display = "flex", mobilemenu.style.display = "flex" ){
+    overlay.style.display = 'none';
+    mobilemenu.style.display = 'none'
+      } else {
+        overlay.style.display = 'flex';
+        mobilemenu.style.display = "flex"
+      }
+    })
+menu6.addEventListener("click", function () {
+if (overlay.style.display = "flex", mobilemenu.style.display = "flex" ){
+    overlay.style.display = 'none';
+    mobilemenu.style.display = 'none'
+      } else {
+        overlay.style.display = 'flex';
+        mobilemenu.style.display = "flex"
+      }
+    })
+</script>
 </body>
 
 </html>
