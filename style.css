@@ -70,10 +70,12 @@
     header .hamburger, header .mobile-menu, header .overlay, header .mobilenav {
         display: none;
     }
-    header .menu1:hover{
+
+    header .menu1:hover {
         color: black;
     }
-    header .menu1::after{
+
+    header .menu1::after {
         content: "";
         width: 0;
         height: 2px;
@@ -82,12 +84,13 @@
         display: block;
 
     }
-    header .menu1:hover::after{
+
+    header .menu1:hover::after {
         content: "";
         width: 30px;
         height: 3px;
         background-color: var(--Lime-Green);
-    } 
+    }
 
 
 
@@ -98,7 +101,6 @@
     }
 
     main .section1 {
-        /* border: 4px solid red; */
         display: flex;
         width: 100%;
         height: 100vh;
@@ -148,16 +150,18 @@
     }
 
     main .section1 .div2 {
+        display: flex;
+        justify-content: flex-end;
         width: 50%;
         background-image: url(./images/bg-intro-desktop.svg);
-        background-repeat: no-repeat;
-        background-size: cover;
+        /* background-repeat: no-repeat; */
+        /* background-size: cover; */
         overflow: hidden;
     }
 
-    .phone {
+    /* .phone {
         width: 110%;
-    }
+    } */
 
     main .section2 {
         display: flex;
@@ -250,7 +254,7 @@
         border-radius: 5px 5px 0 0;
     }
 
-    main .section4{
+    main .section4 {
         width: 100%;
         height: 30vh;
         display: flex;
@@ -259,28 +263,34 @@
         column-gap: 50px;
         background-color: var(--Dark-Blue);
     }
-    main .section4 .div1{
+
+    main .section4 .div1 {
         width: 25%;
         /* display: flex;
         column-gap: 150px; */
     }
-    main .section4 .div1 .icon{
+
+    main .section4 .div1 .icon {
         display: flex;
         column-gap: 10px;
     }
-    main .section4  .about, .career{
+
+    main .section4 .about, .career {
         color: var(--White);
         font-family: var(--Family);
         font-weight: var(--Weights);
     }
-    main .section4 .div1 .icon img:hover{
+
+    main .section4 .div1 .icon img:hover {
         color: var(--Lime-Green);
         cursor: pointer;
     }
-    main .section4 .footer:hover{
+
+    main .section4 .footer:hover {
         cursor: pointer;
     }
-    main .section4 .request{
+
+    main .section4 .request {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -291,141 +301,191 @@
         height: 40px;
         cursor: pointer;
     }
-    main .section4 .right{
+
+    main .section4 .right {
         color: var(--Grayish-Blue);
     }
-   
-    @media screen and (max-width:500px) {
-        header{
+
+    @media screen and (min-width: 300px) and (max-width: 500px) {
+        header {
             justify-content: space-around;
         }
+
         header nav, header .div2 {
             display: none;
         }
 
         header .hamburger {
             display: flex;
+
         }
+
         main .section1 {
             flex-direction: column-reverse;
         }
 
+        main .section1 .div2 {
+            background-image: url(./images/bg-intro-mobile.svg);
+            background-repeat: no-repeat;
+            background-size: 100%;
+            overflow: hidden;
+            width: 100%;
+            height: 60vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+
+        }
+
         main .section1 .div1 {
             margin: 0;
-            padding-top: 50px;
+            padding-top: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content:center;
+            align-items: center;
+            text-align: center;
+            width: 100%;
 
         }
 
-        main .section1 .div1, main .section1 .div2 {
+        main .section1 .div1 .next-g {
+            font-size: 25px;
+        }
+
+        main .section1 .div2 .phone {
             width: 100%;
         }
+
         main .section1 .div1 .Request {
             width: 200px;
-            margin: 0 20px;
             margin-bottom: 30px;
 
         }
 
-
-        main .section1 .div2 {
-            background-image: url(./images/bg-intro-mobile.svg);
-            background-repeat: no-repeat;
-            background-size: cover;
-            overflow: hidden;
+        main .choose {
+            top: 680px;
+            left: 10px;
+            text-align: center;
         }
+
         main .section2 {
             flex-direction: column;
-            column-gap: 12px;
+            row-gap: 15px;
             height: 200vh;
             padding-top: 200px;
+            width: 100%;
         }
+
         main .section2 .div1, main .section2 .div2, main .section2 .div3, main .section2 .div4 {
             width: 100%;
             text-align: center;
+            margin: 0;
         }
-        main .choose {
-            top: 800px;
-            left: 10px;
+
+        main .section2 p {
             text-align: center;
+            padding: 0 30px;
         }
 
         main .choose .we {
             text-align: center;
             font-size: 17px;
         }
+
         main .section3 {
             flex-direction: column;
-            height: 250vh;
-            padding-top: 90px;
+            height:320vh;
+            margin-bottom: 50px;
+            
         }
-         main .section3 .div1, main .section3 .div2, main .section3 .div3, main .section3 .div4 {
+
+        main .section3 .div1, main .section3 .div2, main .section3 .div3, main .section3 .div4 {
             width: 100%;
-            padding: 10px;
         }
-       main .latest {
-            font-size: 43px;
-            top: 2300px;
-            left: 50px;
-        
+
+        main .latest {
+            position: relative;
+            font-size: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 80px;
+            border: 2px solid red;
+            border-radius: 30px;
+            left: 0;
+            right: 0;
+            top: 0;
+            background-color: var(--Very-Light-Gray);
+
         }
-        
+
         main .section3 .note {
             padding: 20px;
             text-align: justify;
         }
 
-         
-      main .section4{
-        flex-direction: column;
-        height: 70vh;
-      }
-      main .section4 div .request, main .section4 .about, main .section4 .career{
-        margin: 0 30px;
-      }
-      .overlay {
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background-color: rgba(0, 0, 0, 0.5);
-        z-index: 1;
-    }
 
-      header .overlay, header .mobile-menu{
-        display: flex;
-      }
-       header .mobile-menu{
-        position: fixed;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        background-color: white;
-        z-index: 5;
-        width: 80%;
-        display: flex;
-        flex-direction: column;
-       align-items: center;
-        row-gap: 30px;
-        padding-top: 50px;
-        font-size: 20px;
-        color: black;
-       }
-       header .mobile-menu a:hover{
-        color: var(--Lime-Green);
-       }
-       header .mobile-menu .Request{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-left: 50px;
-        color: var(--White);
-        background-image: linear-gradient(90deg, var(--Lime-Green), var(--Bright-Cyan));
-        border-radius: 50px;
-        width: 150px;
-        height: 40px;
-        cursor: pointer;
-        margin: 0 50px;
+        main .section4 {
+            flex-direction: column;
+            height: 70vh;
+            margin-top: 30px;
+        }
 
-       }
+        main .section4 div .request, main .section4 .about, main .section4 .career {
+            margin: 0 30px;
+        }
+
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 1;
+        }
+
+        header .overlay, header .mobile-menu {
+            display: none;
+        }
+
+        header .mobile-menu {
+            position: fixed;
+            top: 0;
+            right: -400px;
+            bottom: 0;
+            background-color: white;
+            z-index: 5;
+            width: 80%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            row-gap: 30px;
+            padding-top: 50px;
+            font-size: 20px;
+            color: black;
+            transition: right 0.7s ease-in;
+        }
+
+        header .mobile-menu a:hover {
+            color: var(--Lime-Green);
+        }
+
+        header .mobile-menu .Request {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 50px;
+            color: var(--White);
+            background-image: linear-gradient(90deg, var(--Lime-Green), var(--Bright-Cyan));
+            border-radius: 50px;
+            width: 150px;
+            height: 40px;
+            cursor: pointer;
+            margin: 0 50px;
+
+        }
     }
